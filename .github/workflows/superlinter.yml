@@ -14,4 +14,4 @@ jobs:
         uses: github/super-linter@v4
         env:
           DEFAULT_BRANCH: main
-          GITHUB_TOKEN: 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
+          GITHUB_TOKEN: ${{ secrets.databricks repo may }}
