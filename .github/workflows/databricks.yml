@@ -1,14 +1,12 @@
 name: Run a notebook in the current repo on pushes to main
 
 on:
-  push
+  push:
     branches:
       - main
-
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout repo
         uses: actions/checkout@v2
