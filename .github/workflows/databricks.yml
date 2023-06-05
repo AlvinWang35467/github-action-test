@@ -14,7 +14,7 @@ jobs:
         uses: databricks/run-notebook@v0
         with:
           databricks-host: https://spg-platts-dev.cloud.databricks.com
-          databricks-token: ${{ secrets.DATABRICKS_STAGING_TOKEN }}
+          databricks-token: ${{ secrets.DATABRICKS_TOKEN }}
           local-notebook-path: main.py
           # The cluster JSON below is for AWS workspaces. On Azure and GCP, set
           # node_type_id to an appropriate node type, e.g. "Standard_D3_v2" for
